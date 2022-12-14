@@ -5,7 +5,7 @@
     Estudiante:José - promedio final: 9,9000
     Estudiante:Juan - promedio final: 9,8000
  */
-package ejemplos;
+package paquete1;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo15 {
+public class Ejemplo14 {
 
     /**
      * @param args the command line arguments
@@ -24,19 +24,15 @@ public class Ejemplo15 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         int[] edades = {34, 21, 22, 10, 11, 29, 32};
-        String[] nombres = {"Alumno 1", "Alumno 2", "Alumno 3", "Alumno 3", 
-            "Alumno 4", "Alumno 5", "Alumno 6"};
         int sumaEdades = 0;
         String cadenaFinal = "";
         for (int i = 0; i < edades.length; i++) {
             // solo se sumará las edade de posiciones pares
             if (i % 2 == 0) {
                 sumaEdades = sumaEdades + edades[i];
-                cadenaFinal = String.format("%sEdad agregada %d pertenece al"
-                        + "estudiante de nombre %s\n",
+                cadenaFinal = String.format("%sEdad agregada %d\n",
                         cadenaFinal,
-                        edades[i],
-                        nombres[i]);
+                        edades[i]);
             }
         }
         cadenaFinal = String.format("%sSuma de edades es %d\n", 

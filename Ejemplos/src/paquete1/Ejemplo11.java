@@ -5,7 +5,7 @@
     Estudiante:José - promedio final: 9,9000
     Estudiante:Juan - promedio final: 9,8000
  */
-package ejemplos;
+package paquete1;
 
 import java.util.Scanner;
 
